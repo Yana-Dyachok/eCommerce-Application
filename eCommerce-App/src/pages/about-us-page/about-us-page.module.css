@@ -1,11 +1,18 @@
 .contentInner {
-    min-height: 80vh;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  min-height: 80vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .aboutUsBlock {
@@ -16,14 +23,14 @@
 }
 
 .schoolBlock {
-    max-width: 70rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem;
-    color: var(--c-blue-600);
-    border-radius: 0.2rem;
-    box-shadow: 0 0.3rem 0.6rem var(--c-blue-800);
+  max-width: 70rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  color: var(--c-blue-600);
+  border-radius: 0.2rem;
+  box-shadow: 0 0.3rem 0.6rem var(--c-blue-800);
 }
 
 .logoLink {
@@ -41,17 +48,17 @@
 
 .logoRS:hover {
   cursor: pointer;
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media (width <= 500px) {
   .schoolBlock {
-   font-size: 1rem;
-}
+    font-size: 1rem;
+  }
 
-.logoRS {
-  min-width: 16rem;
-  height: 6rem;
-  background-size: 15rem;
-}
+  .logoRS {
+    min-width: 16rem;
+    height: 6rem;
+    background-size: 15rem;
+  }
 }

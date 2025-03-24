@@ -1,11 +1,18 @@
 .footer {
   min-height: 10vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 1rem;
   background-color: var(--c-blue-800);
   color: var(--c-green-400);
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .iconGitHub {

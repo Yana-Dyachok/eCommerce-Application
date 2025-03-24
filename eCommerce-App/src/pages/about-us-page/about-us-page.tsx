@@ -13,23 +13,25 @@ function AboutUsPage() {
     <>
       <HeaderMainPage countCart={countCart.count} />
       <div className={styles.contentInner}>
-        <Tags.H2>Undefineds Team</Tags.H2>
-        <div className={styles.aboutUsBlock}>
-          {aboutUs.map((us) => (
-            <AboutUsCard key={us.img} us={us} />
-          ))}
-        </div>
-        <div className={styles.schoolBlock}>
-          <Link to="https://rs.school/" className={styles.logoLink}>
-            <div className={styles.logoRS} />
-            <p>
-              RS School, run by the Rolling Scopes community since 2013, offers
-              a unique, free, community-based online education experience. With
-              over 600 developer-volunteers from various countries and companies
-              as mentors, the program connects people, promotes growth, and
-              ensures learning is enjoyable.
-            </p>
-          </Link>
+        <div className={styles.wrapper}>
+          <Tags.H2>Undefineds Team</Tags.H2>
+          <div className={styles.aboutUsBlock}>
+            {aboutUs.map((us) => (
+              <AboutUsCard key={us.img} us={us} />
+            ))}
+          </div>
+          <div className={styles.schoolBlock}>
+            <Link to="https://rs.school/" className={styles.logoLink}>
+              <div className={styles.logoRS} />
+              <p>
+                RS School, run by the Rolling Scopes community since 2013,
+                offers a unique, free, community-based online education
+                experience. With over 600 developer-volunteers from various
+                countries and companies as mentors, the program connects people,
+                promotes growth, and ensures learning is enjoyable.
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />

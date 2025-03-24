@@ -5,27 +5,29 @@ import styles from './footer.module.css';
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link to="https://rs.school/" className={styles.linkBlock}>
-        <div className={styles.logoRS} />
-      </Link>
-      <p className={styles.year}>2024 &copy;</p>
-      <div className={styles.teamBlock}>
-        <Link to="/about-us" className={styles.linkBlock}>
-          <div className={styles.iconGitHub} />
-          <span className={styles.text}>Our team</span>
+      <div className={styles.wrapper}>
+        <Link to="https://rs.school/" className={styles.linkBlock}>
+          <div className={styles.logoRS} />
         </Link>
-        <nav className={styles.footerNav}>
-          {' '}
-          <LinkTemplate to="https://github.com/rs0048">
-            Roman Sokolov
-          </LinkTemplate>
-          <LinkTemplate to="https://github.com/Yana-Dyachok">
-            Yana Dyachok
-          </LinkTemplate>
-          <LinkTemplate to="https://github.com/lonelybush">
-            Nikita Radevich
-          </LinkTemplate>
-        </nav>
+        <p className={styles.year}>2024 &copy;</p>
+        <div className={styles.teamBlock}>
+          <Link to="/about-us" className={styles.linkBlock}>
+            <div className={styles.iconGitHub} />
+            <span className={styles.text}>Our team</span>
+          </Link>
+          <nav className={styles.footerNav}>
+            {' '}
+            <LinkTemplate to="https://github.com/rs0048">
+              Roman Sokolov
+            </LinkTemplate>
+            <LinkTemplate to="https://github.com/Yana-Dyachok">
+              Yana Dyachok
+            </LinkTemplate>
+            <LinkTemplate to="https://github.com/lonelybush">
+              Nikita Radevich
+            </LinkTemplate>
+          </nav>
+        </div>
       </div>
     </footer>
   );

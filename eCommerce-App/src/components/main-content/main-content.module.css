@@ -2,11 +2,19 @@
   min-height: 80vh;
   padding: 0.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../../assets/img/ht-1.jpg') center/cover;
+  background-blend-mode: multiply;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background: url('../../assets/img/ht-1.jpg') center/cover;
-  background-blend-mode: multiply;
 }
 
 .mainSection {

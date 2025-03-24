@@ -121,14 +121,16 @@ function CatalogPage() {
     <>
       <HeaderMainPage countCart={countCart.count} />
       <div className={styles.catalogCategorySection}>
-        <AccordionCatalog onCategoryChange={handleCategoryChange} />
-        <div className={styles.catalogWrapper}>
-          <div className={styles.wrapperFilter}>
-            <SortSelect onSortChange={handleSortChange} />
-            <PriceInput onPriceChange={handlePriceInputChange} />
-            <SearchInput onSearchChange={handleSearchChange} />
+        <div className={styles.wrapper}>
+          <AccordionCatalog onCategoryChange={handleCategoryChange} />
+          <div className={styles.catalogWrapper}>
+            <div className={styles.wrapperFilter}>
+              <SortSelect onSortChange={handleSortChange} />
+              <PriceInput onPriceChange={handlePriceInputChange} />
+              <SearchInput onSearchChange={handleSearchChange} />
+            </div>
+            <Catalog query={query} setCountCart={setCountCart} />
           </div>
-          <Catalog query={query} setCountCart={setCountCart} />
         </div>
       </div>
       <Footer />
