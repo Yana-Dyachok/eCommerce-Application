@@ -23,7 +23,7 @@
     padding: 1rem;
     color: var(--c-blue-600);
     border-radius: 0.2rem;
-    box-shadow: 0rem 0.3rem 0.6rem var(--c-blue-800);
+    box-shadow: 0 0.3rem 0.6rem var(--c-blue-800);
 }
 
 .logoLink {
@@ -44,7 +44,7 @@
 transform: scale(1.1);
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   .schoolBlock {
    font-size: 1rem;
 }

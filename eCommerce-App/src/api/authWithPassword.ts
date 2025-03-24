@@ -48,11 +48,9 @@ export default function authWithPassword(customerSignin: CustomerSignin) {
       .get()
       .execute()
       .then((response) => {
-        console.log('Customer profile:', response.body);
         resolve(response.body);
       })
       .catch((error) => {
-        console.error('Error retrieving customer profile:', error);
         reject(error);
       });
   });

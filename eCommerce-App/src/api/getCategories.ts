@@ -24,7 +24,6 @@ export default function getCategories(): Promise<ApiResponse> {
       .get()
       .execute()
       .then((response) => {
-        console.log('res22', response);
         if (response.body) {
           resolve({ category: response.body.results });
         } else {

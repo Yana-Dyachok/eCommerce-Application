@@ -35,5 +35,8 @@ export default defineConfig(({ mode }) => {
     css: {
       modules: {},
     },
+    build: {
+      chunkSizeWarningLimit: 700,
+    },
   };
 });

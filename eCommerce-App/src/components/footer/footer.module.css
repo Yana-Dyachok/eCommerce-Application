@@ -1,5 +1,5 @@
 .footer {
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,12 +54,13 @@
   background-size: 6rem;
 }
 
-@media (max-width: 420px) {
+@media (width <= 420px) {
   .logoRS {
     min-width: 4rem;
     height: 1.5rem;
     background-size: 4rem;
   }
+
   .year {
     font-size: 1rem;
   }
@@ -68,6 +69,7 @@
     min-width: 1.5rem;
     height: 1.5rem;
   }
+
   .text {
     font-size: 0.7rem;
   }

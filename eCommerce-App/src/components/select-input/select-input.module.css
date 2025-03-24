@@ -6,7 +6,6 @@
 }
 
 .selectCategory {
-    padding: 15px;
     width: 100%;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
@@ -71,7 +70,7 @@
   display: block;
 }
 
-@media(max-width: 500px){
+@media(width <= 500px){
   .labelCategory {
       font-size: 1rem;
   }

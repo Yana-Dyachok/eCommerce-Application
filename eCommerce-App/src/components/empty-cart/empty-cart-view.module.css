@@ -20,16 +20,18 @@
     gap: 0.3rem;
     margin-bottom: 2rem;
 }
+
 .emptyCartContent > h2{
     font-weight: bold;
 
 }
+
 .emptyCartContent > button {
     font-size: 1.6rem;
     background-color: var(--c-green-400);
 }
 
-@media (max-width: 500px){
+@media (width <= 500px){
     .emptyCartContent {
         font-size: 1rem;
     }

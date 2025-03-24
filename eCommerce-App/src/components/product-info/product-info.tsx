@@ -75,7 +75,7 @@ function ProductInfo({
         }
       })
       .catch((error) => {
-        console.error('Error product', error);
+        throw new Error(error);
       });
   }, [id]);
 

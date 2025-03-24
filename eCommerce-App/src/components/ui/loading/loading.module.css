@@ -27,6 +27,7 @@
 .dot {
   --size: 1em;
   --degrees: 0deg;
+
   aspect-ratio: 1;
   position: absolute;
   border-radius: var(--radius);
@@ -44,48 +45,56 @@
 
 .dot:nth-of-type(1) {
   --degrees: 0deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(0 * 100ms);
 }
 
 .dot:nth-of-type(2) {
   --degrees: 45deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(1 * 100ms);
 }
 
 .dot:nth-of-type(3) {
   --degrees: 90deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(2 * 100ms);
 }
 
 .dot:nth-of-type(4) {
   --degrees: 135deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(3 * 100ms);
 }
 
 .dot:nth-of-type(5) {
   --degrees: 180deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(4 * 100ms);
 }
 
 .dot:nth-of-type(6) {
   --degrees: 225deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(5 * 100ms);
 }
 
 .dot:nth-of-type(7) {
   --degrees: 270deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(6 * 100ms);
 }
 
 .dot:nth-of-type(8) {
   --degrees: 315deg;
+
   transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
   animation-delay: calc(7 * 100ms);
 }
@@ -94,6 +103,7 @@
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }

@@ -17,8 +17,9 @@ const initializeApp = async () => {
         localStorage.setItem('version-cart', '1');
       }
     } catch (error) {
-      console.error('Failed to create cart:', error);
-      // Handle the error accordingly, e.g., show an error message to the user
+      if (error instanceof Error) {
+        throw new Error(error.message);
+      }
     }
   }
 

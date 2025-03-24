@@ -40,10 +40,6 @@ export function checkAuthClient(
       .execute()
       .then((response) => {
         if (response.body.customer) {
-          console.log(
-            'Customer signed in successfully:',
-            response.body.customer,
-          );
           const personalId = response.body.customer.id;
           const personalVer = response.body.customer.version;
           saveToLocalStorage('personal-id', personalId);

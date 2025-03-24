@@ -1,11 +1,8 @@
 
 .sortSelect {
-  -webkit-appearance: none; 
-  -moz-appearance: none;
   appearance: none; 
   border: none; 
   background: none; 
-  padding: 0; 
   margin: 0; 
   width: 100%; 
   font-size: inherit; 

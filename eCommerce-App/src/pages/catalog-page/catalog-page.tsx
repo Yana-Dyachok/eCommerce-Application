@@ -38,7 +38,6 @@ function CatalogPage() {
       if (newMaxPrice && newMinPrice) {
         priceFilter = `variants.price.centAmount:range (${newMinPrice * 100} to ${newMaxPrice * 100})`;
       }
-      console.log('a', selectedCategory);
       let newQuery = {};
       if (selectedCategory === undefined || selectedCategory === '') {
         newQuery = {

@@ -8,9 +8,9 @@
     background-color: var(--c-green-200);
     border-radius: 1rem;
     box-shadow:
-    inset 0 0.5rem 8rem rgba(100, 232, 130, 0.7),
-    inset 0 0.5rem 1rem rgba(23, 187, 237, 0.9),
-    inset 0 -0.5rem 1rem rgba(14, 141, 150, 0.8);
+    inset 0 0.5rem 8rem rgb(100 232 130 / 70%),
+    inset 0 0.5rem 1rem rgb(23 187 237 / 90%),
+    inset 0 -0.5rem 1rem rgb(14 141 150 / 80%);
     cursor: pointer;
   }
 
@@ -31,9 +31,9 @@
         color: var(--c-mint-100);
         background-color: var(--c-blue-600);
         box-shadow:
-        inset 0 0.5rem 8rem rgba(46, 105, 172, 0.7),
-        inset 0 0.5rem 1rem rgba(11, 93, 118, 0.9),
-        inset 0 -0.5rem 1rem rgba(37, 222, 235, 0.8);
+        inset 0 0.5rem 8rem rgb(46 105 172 / 70%),
+        inset 0 0.5rem 1rem rgb(11 93 118 / 90%),
+        inset 0 -0.5rem 1rem rgb(37 222 235 / 80%);
         filter: drop-shadow(0.3rem 0.3rem 1.3rem var(--c-mint-100));
         transform: scale(1.1);
     }

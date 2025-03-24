@@ -29,7 +29,6 @@ function LoginForm() {
       console.log('Response from checkAuthClient:', response);
       await authWithPassword(loginData);
       navigate('/catalog');
-      console.log(localStorage.getItem('authToken'));
     } catch (caughtError) {
       if (caughtError instanceof Error)
         setError(`* ${caughtError.message.toLowerCase()}`);

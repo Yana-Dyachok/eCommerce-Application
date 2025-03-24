@@ -1,4 +1,4 @@
-@import '../../styles/colors.css';
+@import url('../../styles/colors.css');
 
 .form {
   max-width: 35rem;
@@ -54,6 +54,7 @@
 .passwordBlock.borderError {
   border: 0.2rem solid red;
 }
+
 .input.borderValid,
 .passwordBlock.borderValid{
   border: 0.2rem solid var(--c-green-400)
@@ -97,7 +98,7 @@
   padding-top: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .form {
     padding: 1rem;
     font-size: 1.8rem;
@@ -117,7 +118,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (width <= 450px) {
   .form {
     padding: 1rem;
     font-size: 1.5rem;

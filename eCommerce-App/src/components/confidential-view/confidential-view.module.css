@@ -35,8 +35,8 @@
 .confidentialForm > label {
     color: var(--c-blue-800);
 }
-@media (max-width: 500px) {
 
+@media (width <= 500px) {
     .btnSection {
         flex-direction: column;
     }

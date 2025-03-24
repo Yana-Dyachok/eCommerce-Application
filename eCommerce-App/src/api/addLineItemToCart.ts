@@ -49,7 +49,6 @@ export default function addLineItemToCart(
       .execute()
       .then((response) => {
         if (response.body) {
-          console.log('Add new Item to Cart:', response.body);
           const newVersionCart = response.body.version.toString();
           localStorage.setItem('version-cart', newVersionCart);
           const cartDraft: Cart = {

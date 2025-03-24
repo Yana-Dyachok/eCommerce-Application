@@ -9,7 +9,7 @@
     color: var(--c-blue-600);
     border-radius: 0.2rem;
     transition: all 0.4s ease-out;
-    box-shadow: 0rem 0.3rem 0.6rem var(--c-blue-800);
+    box-shadow: 0 0.3rem 0.6rem var(--c-blue-800);
   }
   
   .imgBlock {
@@ -80,13 +80,13 @@
     margin-right: 0.5rem; 
   }
   
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     .cardBlock {
       width: 17rem;
     }
   }
   
-  @media (max-width: 360px) {
+  @media (width <= 360px) {
     .cardBlock {
       min-width: 18rem;
     }

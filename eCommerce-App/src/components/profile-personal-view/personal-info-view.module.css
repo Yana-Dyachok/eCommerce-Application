@@ -30,11 +30,12 @@
 .personalForm > div > label {
     color: var(--c-blue-800);
 }
+
 .nameSection > div > label {
     color: var(--c-blue-800);
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
     .nameSection {
         display: flex;
         flex-direction: column;

@@ -1,14 +1,14 @@
 .wrapperFilter {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around; 
   flex-wrap: wrap;
   padding: 1rem;
   gap: 1rem;
-  border-bottom: 0.1rem solid var(--c-blue-600)
+  border-bottom: 0.1rem solid var(--c-blue-600);
 }
 
-.catalogCategorySection{
+.catalogCategorySection {
   min-height: 80vh;
   display: flex;
   width: 100%;
@@ -16,16 +16,15 @@
   padding: 1rem 2rem;
 }
 
-.catalogWrapper{
+.catalogWrapper {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem; 
+  padding: 0 1rem; 
   flex-grow: 2;
 }
 
-
-@media (max-width:768px){
-  .catalogCategorySection{
+@media (width <= 768px) {
+  .catalogCategorySection {
     display: flex;
     flex-direction: column;
     align-items: center;

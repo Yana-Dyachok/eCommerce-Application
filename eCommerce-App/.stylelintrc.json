@@ -1,0 +1,9 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "no-extra-semicolons": true,
+      "selector-case": null,  
+      "selector-class-pattern": null 
+    }
+  }
+  

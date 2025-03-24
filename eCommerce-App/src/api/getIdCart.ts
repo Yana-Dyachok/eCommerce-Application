@@ -29,7 +29,6 @@ export default function getCartByCustomerId(customerId: string) {
       .execute()
       .then((response) => {
         if (response.body) {
-          console.log('Cart1 id:', response.body);
           resolve(response.body);
         } else {
           reject(new Error('No response body'));

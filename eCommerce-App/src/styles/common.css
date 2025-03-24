@@ -1,5 +1,5 @@
-@import "./fonts.css";
-@import "./colors.css";
+@import url("./fonts.css");
+@import url("./colors.css");
 
 html {
     scroll-behavior: smooth;
@@ -17,13 +17,10 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     -webkit-font-smoothing: auto;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     line-height: 1.5;
     color: var(--c-blue-600);
     overflow-x: hidden;
 }
 
-#root {
-    max-width: 1920px;
-}
 

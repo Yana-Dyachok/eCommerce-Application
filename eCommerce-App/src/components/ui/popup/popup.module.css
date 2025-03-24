@@ -4,11 +4,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(37, 34, 34, 0.7);
+  background-color: rgb(37 34 34 / 70%);
   opacity: 1;
   visibility: visible;
   z-index: 1001;
 }
+
 .popupBody {
   min-height: 100%;
   display: flex;
@@ -40,7 +41,7 @@
   color: var(--c-white);
 }
 
-@media (max-width: 760px) {
+@media (width <= 760px) {
   .popupText {
     font-size: 2.5rem;
   }

@@ -1,5 +1,4 @@
 .quantityContainer{
-    display: flex;
     width: 10rem;
     height: 2.5rem;
     display: flex;
@@ -29,7 +28,7 @@
     color: var(--c-blue-800);
     font-weight: bold;
     font-size: 2rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     transition: all 0.4s ease-out;
     line-height: 0rem;
 }
@@ -39,14 +38,14 @@
 }
 
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .quantityContainer{
         width: 7rem;
 
     }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
     .quantityContainer{
         width: 10rem;
 

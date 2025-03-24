@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   .searchInputBlock{
     width: 15rem
   }

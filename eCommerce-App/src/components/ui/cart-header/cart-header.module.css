@@ -21,7 +21,7 @@ cursor: pointer;
     background-color: var(--c-red);
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .count  {
     display: flex;
     width: 1.5rem;

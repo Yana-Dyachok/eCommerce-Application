@@ -82,7 +82,6 @@ function Catalog({ query = {}, setCountCart }: CatalogProps) {
     (page - 1) * itemsPerPage,
     page * itemsPerPage,
   );
-  console.log(displayedProducts);
   return (
     <>
       <div className={styles.catalogBlock}>

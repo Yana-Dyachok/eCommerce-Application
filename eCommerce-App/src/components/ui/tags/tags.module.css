@@ -21,14 +21,14 @@
     margin: 0  2rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .title,
     .smallTitle {
         font-size: 2rem;
       }
 }
 
-@media (max-width: 420px) {
+@media (width <= 420px) {
     .title,
     .smallTitle {
         font-size: 1.5rem;

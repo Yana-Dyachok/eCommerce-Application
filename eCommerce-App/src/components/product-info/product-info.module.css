@@ -60,7 +60,7 @@ padding-right: 4rem;
 }
 
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .productPageBlock {
     flex-wrap: wrap;
   }
@@ -70,7 +70,7 @@ padding-right: 4rem;
   }
 }
 
-@media (max-width: 470px) {
+@media (width <= 470px) {
   .productPageImgSlider {
     min-width: 21rem;
     width: 21rem;
@@ -84,6 +84,7 @@ padding-right: 4rem;
   .productPageDescription {
     font-size: 1rem;
   }
+
   .productInner {
     padding: 0  1rem 1rem 0;
     }

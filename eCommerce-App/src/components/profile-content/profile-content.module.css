@@ -55,24 +55,28 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
-@media (max-width: 800px) {
+
+@media (width <= 800px) {
     .profileSection {
         align-items: normal;
     }
 }
-@media (max-width: 500px) {
+
+@media (width <= 500px) {
     .profileSection {
         padding: 2rem 3rem;
     }
 }
-@media (max-width: 420px) {
+
+@media (width <= 420px) {
     .greetUser > h2 {
         font-size: 1.7rem;
     }
 }
-@media (max-width: 400px) {
+
+@media (width <= 400px) {
     .profileNavigation {
         display: flex;
         flex-direction: column;

@@ -20,7 +20,7 @@ function useCountCart() {
         setCountCart({ ...countCart, count: cartProducts });
       } catch (caughtError) {
         if (caughtError instanceof Error) {
-          console.log(caughtError.message);
+          throw new Error(caughtError.message);
         }
       }
     }

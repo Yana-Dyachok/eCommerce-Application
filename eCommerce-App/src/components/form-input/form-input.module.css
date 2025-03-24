@@ -10,7 +10,6 @@
 }
 
 .formInput > input {
-    padding: 15px;
     width: 100%;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
@@ -25,9 +24,11 @@
 .formInput > input:valid{
     border: 0.2rem solid var(--c-green-400)
 }
+
 .formInput > input[data-responseError='true']{
     border: 0.2rem solid red;
 }
+
 .formInput > input:invalid[data-focused='true']{
     border: 0.2rem solid red;
 }
@@ -39,16 +40,18 @@
     word-wrap: break-word;
     display: none;
 }
+
 .formInput > input[data-responseerror='true'] ~ span{
     display: block;
 }
+
 .formInput > input:invalid[data-focused='true'] ~ span{
     display: block;
 }
 
 
 
-@media(max-width: 500px){
+@media(width <= 500px){
     .formInput > label{
         font-size: 1rem;
     }

@@ -33,11 +33,6 @@ export default function createClients(
       .execute()
       .then((response) => {
         if (response.body.customer) {
-          console.log(
-            'Customer created successfully:',
-            response.body,
-            response.body.customer.firstName,
-          );
           const customerSignInResult: CustomerSignInResult = {
             customer: response.body.customer,
           };

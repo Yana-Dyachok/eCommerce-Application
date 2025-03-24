@@ -1,41 +1,41 @@
-.registrationRoot{
-    display: flex;
-    justify-content: center;
+.registrationRoot {
+  display: flex;
+  justify-content: center;
 }
 
-.registrationForm{
-    width: 40rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem 3rem;
-    margin: 2rem 3rem;
-    border: 0.1rem solid var(--c-mint-100);
-    border-radius: 1rem;
+.registrationForm {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 3rem;
+  margin: 2rem 3rem;
+  border: 0.1rem solid var(--c-mint-100);
+  border-radius: 1rem;
 }
 
 .registrationForm > button {
-    align-self: center;
+  align-self: center;
 }
 
 .titleRegistration {
-    display: flex;
-    justify-content: center;
-    gap: 0.2rem;
-    font-size: 1rem;
-    color: var(--c-blue-600);
-    text-align: center;
-  } 
-
-.registrationForm > span {
-    color: red;
-    font-size: 0.8rem;
-    word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 1rem;
+  color: var(--c-blue-600);
+  text-align: center;
 }
 
-@media(max-width: 500px){
-    .registrationForm{
-        padding: 1rem 0.5rem;
-        margin: 2rem 2rem;
-    }
+.registrationForm > span {
+  color: red;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+}
+
+@media (width <= 500px) {
+  .registrationForm {
+    padding: 1rem 0.5rem;
+    margin: 2rem;
+  }
 }

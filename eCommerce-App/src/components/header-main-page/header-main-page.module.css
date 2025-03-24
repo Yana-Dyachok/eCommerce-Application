@@ -1,7 +1,7 @@
-@import '../../styles/colors.css';
+@import url('../../styles/colors.css');
 
 .headerMain {
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -109,7 +109,7 @@
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .burgerMenu {
     display: block;
     border: none;

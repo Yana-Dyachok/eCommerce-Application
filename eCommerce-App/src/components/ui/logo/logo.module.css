@@ -15,6 +15,7 @@
   mask-position: center;
   background-color: var(--c-green-400);
   cursor: pointer;
+
   /* mask-image: url('../../../assets/logo/logo-un.png'); */
   mask-image: url('../../../assets/logo/logo-und.png');
 }

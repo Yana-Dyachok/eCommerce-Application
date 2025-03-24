@@ -54,7 +54,7 @@ function UseAddressInfo() {
         });
       } catch (caughtError) {
         if (caughtError instanceof Error) {
-          console.log(caughtError.message);
+          throw new Error(caughtError.message);
         }
       }
     }

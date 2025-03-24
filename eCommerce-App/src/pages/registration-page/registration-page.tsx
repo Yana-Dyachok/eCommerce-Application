@@ -173,13 +173,12 @@ function RegistrationPage() {
         console.log('Response from checkAuthClient:', responseAuth);
         await authWithPassword(loginData);
       } catch (caughtError) {
-        if (caughtError instanceof Error) console.log(caughtError);
+        if (caughtError instanceof Error) throw new Error(caughtError.message);
       }
     } catch (caughtError) {
       if (caughtError instanceof Error) {
         setShowFormError(true);
         setErrorText(`* ${caughtError.message.toLocaleLowerCase()}`);
-        console.log(caughtError.message);
       }
     }
   };

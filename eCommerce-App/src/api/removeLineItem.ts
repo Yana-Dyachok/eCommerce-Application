@@ -46,7 +46,6 @@ export default function removeLineItemFromCart(
       .execute()
       .then((response) => {
         if (response.body) {
-          console.log('Removed Item from Cart:', response.body);
           const newVersionCart = response.body.version.toString();
           saveToLocalStorage('version-cart', newVersionCart);
           const cartDraft: Cart = {

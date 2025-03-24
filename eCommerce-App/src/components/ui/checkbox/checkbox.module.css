@@ -5,9 +5,6 @@
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
   
@@ -19,6 +16,7 @@
     width: 20px;
     background-color: #eee;
   }
+
   .labelContainer:hover input ~ .checkmark {
     background-color: #ccc;
   }
@@ -26,29 +24,29 @@
   .labelContainer input:checked ~ .checkmark {
     background-color: var(--c-mint-300);
   }
-  .checkmark:after {
+
+  .checkmark::after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  .labelContainer input:checked ~ .checkmark:after {
+  .labelContainer input:checked ~ .checkmark::after {
     display: block;
   }
-  .labelContainer .checkmark:after {
+
+  .labelContainer .checkmark::after {
     left: 7px;
     top: 4px;
     width: 5px;
     height: 10px;
     border: solid white;
     border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
 
-  @media(max-width: 500px){
+  @media(width <= 500px){
     .labelContainer{
       font-size: 1rem;
     }

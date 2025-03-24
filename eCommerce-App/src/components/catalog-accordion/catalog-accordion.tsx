@@ -84,7 +84,7 @@ export function AccordionCatalog({ onCategoryChange }: CategorySelectProps) {
         }
       })
       .catch((error) => {
-        console.error('Error fetching products', error);
+        throw new Error(error);
       });
   }, []);
 

@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'oswald';
+    font-family: oswald;
     src: url('../assets/fonts/Oswald-Medium.woff2') format('woff2'),
     url("../assets/fonts/Oswald-Medium.woff") format("woff");
     font-weight: 500;

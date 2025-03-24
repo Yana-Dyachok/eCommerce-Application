@@ -48,7 +48,6 @@ export function TableContent({
           <tr
             onClick={() => {
               navigate(`${entry.id}`);
-              console.log(`${entry.id}`);
             }}
             id={entry.id}
             key={entry.id}

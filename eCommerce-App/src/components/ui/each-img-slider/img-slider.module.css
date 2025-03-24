@@ -27,7 +27,7 @@
     z-index: 999;
   }
 
-  @media (max-width: 470px) {
+  @media (width <= 470px) {
     .sliderBlock {
      width: 20rem;
     }
